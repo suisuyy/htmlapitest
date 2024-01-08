@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head><link rel="stylesheet" href="/index.4d663569.css">
-    <title>JavaScript Sandbox</title>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-  </head>
+    <title>API Testing App</title>
+</head>
+<body>
 
-  <body>
-    <div id="app"></div>
 
-    <script src="/index.ac9dc4ba.js" defer=""></script>
-  </body>
+<!-- Image Upload and Preview -->
+<h2>Image Upload and Preview</h2>
+<input type="file" id="imageUpload" accept="image/*">
+<img id="imagePreview" alt="Image preview" style="max-width: 320px; display: none">
+<button id="uploadButton">Upload Image</button>
+
+<!-- ... rest of your HTML below ... -->
+
+<!-- Camera API -->
+<h2>Camera API</h2>
+<video id="cameraPreview" width="320" height="240" autoplay=""></video>
+<button id="captureButton">Capture Image</button>
+<canvas id="snapshotCanvas" width="320" height="240" style="display: none"></canvas>
+
+<!-- Audio Record API -->
+<h2>Audio Record API</h2>
+<button id="startRecordButton">Start Recording</button>
+<button id="stopRecordButton" disabled="">Stop Recording</button>
+<audio id="audioPlayer" controls=""></audio>
+
+<!-- Location API -->
+<h2>Location API</h2>
+<button id="getLocationButton">Get Current Location</button>
+<p id="locationDisplay">Location will be displayed here.</p>
+
+<!-- Clipboard API -->
+<h2>Clipboard API</h2>
+<input type="text" id="clipboardInput" placeholder="Type something to copy">
+<button id="copyButton">Copy to Clipboard</button>
+<button id="pasteButton">Paste from Clipboard</button>
+
+<script src="/index.3e24aa3c.js"></script>
+<script src="/sandbox.59712999.js"></script></body>
 </html>
